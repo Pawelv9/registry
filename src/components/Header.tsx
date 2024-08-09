@@ -1,6 +1,10 @@
+import {Link} from "react-router-dom";
+
 function Header() {
     return (
-        <div>Header</div>
+        <div>
+            <Link to="/">NPM Registry</Link>
+        </div>
     );
 }
 
