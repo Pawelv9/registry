@@ -1,6 +1,11 @@
+import type {DetailsLoaderResult} from './detailsLoader'
+import {useLoaderData} from "react-router-dom";
+
 function DetailsPage() {
+    const { details } = useLoaderData() as DetailsLoaderResult;
+
     return (
-        <div>DetailsPage</div>
+        <div>{details.name} - {details.description}</div>
     );
 }
 
